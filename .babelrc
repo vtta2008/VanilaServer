@@ -1,0 +1,72 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3,
+        "loose": true,
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "ie >= 10",
+            "safari >= 7"
+          ]
+        }
+      }
+    ],
+    "@babel/react"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "react-hot-loader/babel"
+        ],
+        [
+          "@babel/transform-modules-commonjs"
+        ],
+        [
+          "@babel/proposal-decorators", { "legacy": true }
+        ],
+        [
+          "@babel/proposal-class-properties", { "loose": true }
+        ],
+        [
+          "@babel/transform-classes"
+        ],
+        [
+          "@babel/transform-regenerator"
+        ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        [
+          "direct-import",
+          {
+            "modules": [
+              "@material-ui/core",
+              "@material-ui/icons"
+            ]
+          }
+        ],
+        [
+          "@babel/transform-modules-commonjs"
+        ],
+        [
+          "@babel/proposal-decorators", { "legacy": true }
+        ],
+        [
+          "@babel/proposal-class-properties", { "loose": true }
+        ],
+        [
+          "@babel/transform-classes"
+        ],
+        [
+          "@babel/transform-regenerator"
+        ]
+      ]
+    }
+  }
+}
