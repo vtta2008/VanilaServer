@@ -64,7 +64,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-direct-import": "^0.6.2",
     "basic-auth": "^2.0.1",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "compression": "^1.7.4",
     "connected-react-router": "^6.4.0",
     "cookie-parser": "^1.4.4",
