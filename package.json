@@ -97,7 +97,7 @@
     "mobx-react-devtools": "^6.1.1",
     "mobx-state-tree": "^3.16.0",
     "mongoose": "^5.9.12",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.19.0",
     "opn": "^6.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
